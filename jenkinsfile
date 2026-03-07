@@ -39,7 +39,7 @@ pipeline {
         stage('Run New Container') {
             steps {
                 sh '''
-                docker run -d -p 1337:1337 --name ${CONTAINER_NAME} ${IMAGE_NAME}:${IMAGE_TAG}
+                docker run -d -p 1338:1337 --name ${CONTAINER_NAME} ${IMAGE_NAME}:${IMAGE_TAG}
                 '''
             }
         }
