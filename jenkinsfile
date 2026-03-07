@@ -7,9 +7,9 @@ pipeline {
 
     environment {
         DOCKER_USER = "surya8442"
-        IMAGE_NAME = "autoassist"
+        IMAGE_NAME = "nodejs_img"
         IMAGE_TAG = "latest"
-        CONTAINER_NAME = "autoassist_cont"
+        CONTAINER_NAME = "nodejs_cont"
     }
 
     stages {
