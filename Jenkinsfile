@@ -44,8 +44,8 @@ stages {
     stage('Deploy Container') {
         steps {
             sh '''
-            docker rm -f Hotstar_project_cont || true
-            docker run -d -p 2002:8080 --name Hotstar_project_cont $DOCKER_IMAGE:latest
+            docker rm -f bike_rentals_project_cont || true
+            docker run -d -p 2002:8080 --name bike_rentals_project_cont $DOCKER_IMAGE:latest
             '''
         }
     }
