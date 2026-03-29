@@ -2,7 +2,7 @@ pipeline {
 agent any
 
 environment {
-    DOCKER_IMAGE = "rajeshtutta123/bike_rentals_project_img"
+    DOCKER_IMAGE = "divakar2141/bike_rentals_project_img"
 }
 
 stages {
@@ -10,8 +10,8 @@ stages {
     stage('GIT CHECKOUT') {
         steps {
             git branch: 'master',
-            credentialsId: 'rajeshcred',
-            url: 'https://github.com/rajeshtutta/bike-rentals.git'
+            credentialsId: 'Divaa',
+            url: 'https://github.com/Divakarg63/bike-rentals.git'
         }
     }
     stage('Docker Build') {
